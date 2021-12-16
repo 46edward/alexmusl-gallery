@@ -29,4 +29,67 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 49px;
+  padding: 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #354551;
+}
+
+.header__logo {
+  display: relative;
+  width: 168px;
+  height: 28px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.header__logo::after {
+  content: "Photo Gallery";
+  position: absolute;
+  left: 122px;
+  top: 16px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  /* identical to box height */
+  color: #ffffff;
+}
+
+.header__hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.header__hamburger span {
+  width: 100%;
+  height: 3px;
+  background: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
