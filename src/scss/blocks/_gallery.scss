@@ -1,6 +1,5 @@
 .gallery {
     padding-top: 15px;
-    background-color:$bg-color;
     &__menu {
         & button {
             min-width: 86px;
@@ -19,14 +18,17 @@
             }
         }
     }
-    &__wrapper {
+    &__grid-section {
         margin-top: 15px;
-        margin-bottom: 32px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 32px;
+    }
+    &__wrapper {
         background-color: $white-color;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
         &_img {
             width: 100%;
-            height: 230px;
             object-fit: cover;
         }
         &_header {
