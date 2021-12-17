@@ -257,6 +257,69 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 90%;
 }
 
+.contact {
+  background-color: #D2D2D2;
+}
+
+.contact__wrapper {
+  background: #EDEDED;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact__photo {
+  width: 100%;
+}
+
+.contact__title {
+  margin-top: 22px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 22px;
+  text-align: center;
+  color: #354551;
+}
+
+.contact__phone {
+  margin-top: 17px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  text-align: center;
+}
+
+.contact__phone a {
+  color: #354551;
+  text-decoration: none;
+}
+
+.contact__grid-container {
+  padding: 32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.contact__social_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  border-radius: 17px;
+}
+
 .about {
   background-color: #D2D2D2;
 }
