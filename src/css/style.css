@@ -93,6 +93,10 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #ffffff;
 }
 
+.container {
+  padding: 0 15px;
+}
+
 .mobile-menu {
   position: fixed;
   top: 49px;
@@ -152,8 +156,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .gallery {
-  padding: 15px;
-  padding-bottom: 0px;
+  padding-top: 15px;
   background-color: #D2D2D2;
 }
 
