@@ -1,0 +1,50 @@
+.mobile-menu {
+    position: fixed;
+    top: 49px;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: $main-color;
+    &__header {
+        padding: 0 20%;
+        padding-top: 16px;
+        text-align: center;
+        & img {
+            width: 84px;
+            height: 84px;
+            margin: 0 auto;
+            border-radius: 100%;
+        }
+        & span {
+            display: block;
+            margin-top: 10px;
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            color: $bg-color;
+        }
+    }
+    &__wrapper {
+        margin-top: 55px;
+        min-height: 40vh;
+        &_item {
+            margin: 0 auto;
+            padding: 15px 0;
+            width: 60%;
+            border-bottom: 1px solid $bg-color;
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            text-align: center;
+            color: $bg-color;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    &_hide {
+        display: none;
+    }
+}
