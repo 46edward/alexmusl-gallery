@@ -289,7 +289,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .gallery__fullscreen {
   position: absolute;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -306,6 +308,10 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 10;
+}
+
+.gallery__fullscreen_hide {
+  display: none;
 }
 
 .gallery__fullscreen_header {
