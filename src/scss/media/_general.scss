@@ -1,0 +1,28 @@
+@media (min-width: 946px) {
+    .header {
+        &__hamburger {
+            display: none;
+        }
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 49px;
+        flex-direction: row;
+        justify-content: end;
+        &__mobile {
+            display: none;
+        }
+        & ul {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            & li {
+                padding: 0 30px;
+                border: none;
+                border-right: 1px solid $bg-color;
+            }
+        }
+    }
+}

@@ -98,6 +98,71 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 0 15px;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 70vw;
+  right: 0px;
+  top: 49px;
+  background-color: #354551;
+}
+
+.menu__mobile {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.menu__mobile img {
+  width: 84px;
+  height: 84px;
+  border-radius: 100%;
+}
+
+.menu__mobile span {
+  display: block;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #D2D2D2;
+}
+
+.menu ul {
+  margin-top: 20px;
+  padding: 0;
+  text-align: center;
+}
+
+.menu ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid #D2D2D2;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  text-decoration: none;
+  list-style-type: none;
+  color: #D2D2D2;
+}
+
+.menu ul li:last-child {
+  border-bottom: none;
+}
+
 .mobile-menu {
   position: fixed;
   top: 49px;
@@ -358,5 +423,41 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 17px;
   text-align: justify;
   color: #354551;
+}
+
+@media (min-width: 946px) {
+  .header__hamburger {
+    display: none;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 49px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .menu__mobile {
+    display: none;
+  }
+  .menu ul {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu ul li {
+    padding: 0 30px;
+    border: none;
+    border-right: 1px solid #D2D2D2;
+  }
 }
 /*# sourceMappingURL=style.css.map */
