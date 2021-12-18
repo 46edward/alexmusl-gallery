@@ -48,9 +48,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .header__logo {
-  display: relative;
-  width: 168px;
-  height: 28px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -61,14 +58,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .header__logo::after {
   content: "Photo Gallery";
-  position: absolute;
-  left: 122px;
-  top: 16px;
+  margin-left: 6px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -425,12 +419,12 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #354551;
 }
 
-@media (min-width: 946px) {
+@media (min-width: 1280px) {
   .header__hamburger {
     display: none;
   }
   .menu {
-    position: absolute;
+    position: static;
     top: 0;
     right: 0;
     height: 49px;
@@ -458,6 +452,26 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 0 30px;
     border: none;
     border-right: 1px solid #D2D2D2;
+  }
+  .menu ul li:last-child {
+    border-right: none;
+  }
+  .container {
+    padding: 0 160px;
+  }
+  .header {
+    padding: 0 70px;
+  }
+  .gallery {
+    padding-top: 25px;
+  }
+  .gallery__menu {
+    margin-bottom: 25px;
+  }
+  .gallery__menu button {
+    margin-right: 20px;
+    padding: 0 75px;
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

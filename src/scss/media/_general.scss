@@ -1,11 +1,11 @@
-@media (min-width: 946px) {
+@media (min-width: 1280px) {
     .header {
         &__hamburger {
             display: none;
         }
     }
     .menu {
-        position: absolute;
+        position: static;
         top: 0;
         right: 0;
         height: 49px;
@@ -22,6 +22,26 @@
                 padding: 0 30px;
                 border: none;
                 border-right: 1px solid $bg-color;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    .container {
+        padding: 0 160px;
+    }
+    .header {
+        padding: 0 70px;
+    }
+    .gallery {
+        padding-top: 25px;
+        &__menu {
+            margin-bottom: 25px;
+            & button {
+                margin-right: 20px;
+                padding: 0 75px;
+                font-size: 12px;            
             }
         }
     }
