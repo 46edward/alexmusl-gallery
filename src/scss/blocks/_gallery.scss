@@ -21,7 +21,7 @@
     &__grid-section {
         margin-top: 15px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
         gap: 32px;
     }
     &__wrapper {
@@ -84,3 +84,9 @@
         }
     }
 }
+
+// @media (min-width: 600px) {
+//     body {
+//       background: green;
+//     }
+//   }

@@ -1,10 +1,11 @@
 .mobile-menu {
     position: fixed;
     top: 49px;
-    right: 0;
+    right: -100%;
     width: 70%;
     height: 100vh;
     background-color: $main-color;
+    transition: 1s all;
     &__header {
         padding: 0 20%;
         padding-top: 16px;
@@ -44,7 +45,7 @@
             }
         }
     }
-    &_hide {
-        display: none;
+    &_active {
+        right: 0;
     }
 }

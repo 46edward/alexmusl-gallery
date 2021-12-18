@@ -101,10 +101,12 @@ p, h1, h2, h3, h4, h5, h6 {
 .mobile-menu {
   position: fixed;
   top: 49px;
-  right: 0;
+  right: -100%;
   width: 70%;
   height: 100vh;
   background-color: #354551;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
 .mobile-menu__header {
@@ -152,8 +154,8 @@ p, h1, h2, h3, h4, h5, h6 {
   border-bottom: none;
 }
 
-.mobile-menu_hide {
-  display: none;
+.mobile-menu_active {
+  right: 0;
 }
 
 .gallery {
@@ -182,8 +184,8 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-top: 15px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(290px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 32px;
 }
 
