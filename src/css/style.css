@@ -401,6 +401,10 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 17px;
 }
 
+.contact__social_item img {
+  cursor: pointer;
+}
+
 .contact__job {
   margin-top: 10px;
   text-align: center;
@@ -417,6 +421,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .contact__job img {
   margin: 20px auto;
+  cursor: pointer;
 }
 
 .contact__line {
@@ -459,6 +464,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .contact__social_icons img {
   padding: 0 10px;
+  cursor: pointer;
 }
 
 .about__wrapper {
@@ -568,6 +574,7 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 0 30px;
     border: none;
     border-right: 1px solid #D2D2D2;
+    cursor: pointer;
   }
   .menu ul li:last-child {
     border-right: none;
