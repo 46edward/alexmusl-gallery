@@ -338,18 +338,22 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 90%;
 }
 
+.contact__photo {
+  width: 100%;
+}
+
 .contact__wrapper {
   background: #EDEDED;
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-.contact__photo {
-  width: 100%;
+.contact__inner {
+  padding-bottom: 25px;
 }
 
 .contact__title {
-  margin-top: 22px;
+  padding-top: 22px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -395,6 +399,66 @@ p, h1, h2, h3, h4, h5, h6 {
           align-items: center;
   background: #ffffff;
   border-radius: 17px;
+}
+
+.contact__job {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact__job span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 15px;
+  color: #354551;
+}
+
+.contact__job img {
+  margin: 20px auto;
+}
+
+.contact__line {
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 70%;
+  border: 1px solid #354551;
+}
+
+.contact__social {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.contact__social_title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  color: #354551;
+}
+
+.contact__social_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px;
+  display: flex;
+}
+
+.contact__social_icons img {
+  padding: 0 10px;
 }
 
 .about__wrapper {
@@ -536,6 +600,96 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   .about__descr {
     padding: 50px 85px;
+  }
+  .contact__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact__photo {
+    width: 40%;
+    min-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact__inner {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 92px;
+    padding-bottom: 25px;
+    background: #ffffff;
+  }
+  .contact__phone {
+    margin-top: 50px;
+  }
+  .contact__grid-container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    padding-top: 25px;
+  }
+  .contact__social_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0;
+  }
+  .contact__job {
+    margin-top: 18px;
+    text-align: center;
+  }
+  .contact__job span {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 15px;
+    color: #354551;
+  }
+  .contact__job img {
+    margin: 30px auto;
+  }
+  .contact__line {
+    margin-top: 25px;
+    border: 1px solid #354551;
+  }
+  .contact__social {
+    margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contact__social_title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    color: #354551;
+  }
+  .contact__social_icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 15px;
+  }
+  .contact__social_icons img {
+    padding: 0 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

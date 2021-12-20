@@ -57,4 +57,75 @@
             padding: 50px 85px;
         }
     }
+    .contact {
+        &__wrapper {
+            display: flex;
+        }
+        &__photo {
+            width: 40%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+        &__inner {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            padding: 60px 92px;
+            padding-bottom: 25px;
+            background: $white-color;
+        }
+        &__phone {
+            margin-top: 50px;
+        }
+        &__grid-container {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            padding-top: 25px;
+        }
+        &__social_item {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+        &__job {
+            margin-top: 18px;
+            text-align: center;
+            & span {
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 19px;
+                line-height: 15px;
+                color: $main-color;
+            }
+            & img {
+                margin: 30px auto;
+            }
+        }
+        &__line {
+            margin-top: 25px;
+            border: 1px solid $main-color;
+        }
+        &__social {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            &_title {
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 19px;
+                color: $main-color;
+            }
+            &_icons {
+                display: flex;
+                justify-content: center;
+                margin: 15px;
+                & img {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
 }
