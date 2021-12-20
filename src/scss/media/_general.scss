@@ -46,8 +46,15 @@
         }
     }
     .about {
+        &__wrapper {
+            display: flex;
+            min-height: 671px;
+        }
         &__photo {
-            
+            min-width: 383px;
+        }
+        &__descr {
+            padding: 50px 85px;
         }
     }
 }

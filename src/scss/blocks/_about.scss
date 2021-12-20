@@ -25,6 +25,31 @@
         font-weight: normal;
         font-size: 17px;
         text-align: justify;
-        color: #354551;
+        color: $main-color;
+    }
+    &__line {
+        margin-top: 25px;
+        border: 1px solid $main-color;
+    }
+    &__social {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        &_title {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19px;
+            color: $main-color;
+        }
+        &_icons {
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+            & img {
+                padding: 0 10px;
+            }
+        }
     }
 }
