@@ -4,15 +4,25 @@
     justify-content: start;
     align-items: center;
     position: fixed;
+    padding-top: 49px;
     height: 100vh;
     width: 70vw;
     right: -100%;
-    top: 49px;
+    bottom: 0;
     background-color: $main-color;
-    transition: 1s all;
+    transition: .4s all;
+    z-index: 1;
     &__mobile {
+        position: relative;
         margin-top: 16px;
         text-align: center;
+        &_close {
+            position: absolute;
+            right: -50px;
+            top: -62px;
+            font-size: 30px;
+            color: $white-color;
+        }
         & img {
             width: 84px;
             height: 84px;

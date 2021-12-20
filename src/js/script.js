@@ -1,10 +1,15 @@
-const mobMenuBtn = document.querySelector('.header__hamburger');
+const hamburgerBtn = document.querySelector('.header__hamburger');
+const closeBtn = document.querySelector('.menu__mobile_close');
 const mobileMenu = document.querySelector('.menu');
 const galleryItems = document.querySelectorAll('.gallery__wrapper');
 const galleryFullScreen = document.querySelector('.gallery__fullscreen');
 const galleryFullScreenImg = document.querySelector('.gallery__fullscreen_img');
 
-mobMenuBtn.addEventListener('click', ()=> {
+hamburgerBtn.addEventListener('click', ()=> {
+    mobileMenu.classList.toggle('menu_active');
+});
+
+closeBtn.addEventListener('click', ()=> {
     mobileMenu.classList.toggle('menu_active');
 });
 
