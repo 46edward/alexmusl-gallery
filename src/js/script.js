@@ -18,6 +18,7 @@ menuLinks.forEach((item, key) => {
             };
         });
         sectionsContent[key].classList.add(`${sectionsContent[key].classList.toString()}_active`);
+        mobileMenu.classList.toggle('menu_active');
     });
 });
 
